@@ -10,10 +10,7 @@ import android.widget.TextView
 import com.apps.elkaan.coderswag.Model.Category
 import com.apps.elkaan.coderswag.R
 
-class CategoryAdapter(context:Context, categories:List<Category>) : BaseAdapter(){
-
-    val context = context
-    val categories = categories
+class CategoryAdapter(val context: Context, val categories: List<Category>) : BaseAdapter(){
 
     override fun getItem(position: Int): Any {
         return categories[position]
